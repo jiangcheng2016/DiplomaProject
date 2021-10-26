@@ -3,6 +3,7 @@ package com.jiangrzc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.kafka.annotation.EnableKafkaStreams;
 
 /**
  * 1.启动类名称，必须叫 XXXApplication
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@EnableKafkaStreams
 public class DemoApplication {
     public static void main(String[] args) {
         /**
