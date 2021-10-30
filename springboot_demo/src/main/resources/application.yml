@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+spring:
+  kafka:
+    bootstrap-servers: 192.168.201.32
+    producer:
+      acks: all
+      transaction-id-prefix: tx
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    consumer:
+      group-id: 0
+      auto-offset-reset:
+    streams:
+      application-id: streams-test
+      properties:
+        "[default.key.serde]": org.apache.kafka.common.serialization.Serdes$StringSerde
+        "[default.value.serde]": org.apache.kafka.common.serialization.Serdes$StringSerde
