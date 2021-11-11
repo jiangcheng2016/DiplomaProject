@@ -1,6 +1,7 @@
 package com.jiangrzc.tools;
 
 import java.io.*;
+import java.util.Stack;
 
 public class GenerateData {
     public static void main(String[] args) {
